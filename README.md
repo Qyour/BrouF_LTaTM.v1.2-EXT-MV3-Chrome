@@ -18,6 +18,7 @@ Clean, Modern Interface: Readable text, visible links, integrated copy button, a
 
 To decode text from an image: simply right-click the image in your browser.
 To encode text into an image:
+In popup.js edit the line 125 to write your personal ImgBB API-KEY
 Paste the URL of your base image.
 Enter the text to encrypt and choose a .txt file name.
 Check “Auto-upload image” if you want to publish it on ImgBB.

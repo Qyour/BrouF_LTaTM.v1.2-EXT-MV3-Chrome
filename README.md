@@ -26,5 +26,16 @@ Retrieve the generated link and copy it with one click if the image was uploaded
 
 🌐 Compatibility
 
+Manifest V3
 Works with Chrome, Edge (Chromium), Brave, Opera, and all Chromium-based browsers.
 Fully compatible with Brouf_Pop for direct encoding and decoding.
+
+🧩 How to Install the Extension on Chrome from the .zip File
+
+Download the .zip file of the extension to your computer.
+Unzip the file to a folder.
+Open Chrome and go to chrome://extensions/.
+Enable Developer mode (top right corner).
+Click “Load unpacked”.
+Select the folder where you unzipped the extension.
+The extension will now appear in your browser and is ready to use.

@@ -1,0 +1,45 @@
+{
+  "manifest_version": 3,
+  "name": "BrouF_LTaTM",
+  "version": "1.2",
+  "description": "Crypte du texte dans vos images et récupérez-le d’un simple clic droit ! Upload automatique sur ImgBB.",
+  "author": "KyouR",
+  "permissions": [
+    "storage",
+	"contextMenus",
+    "scripting",
+    "downloads",
+    "activeTab"
+  ],
+  "host_permissions": [
+    "<all_urls>"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "BrouF_LTaTM by KyouR"
+  },
+  "icons": {
+    "48": "assets/icon48.png",
+    "128": "assets/icon128.png"
+  },
+  "web_accessible_resources": [
+    {
+      "resources": ["icons/*"],
+      "matches": ["<all_urls>"]
+    }
+  ],
+  "content_security_policy": {
+    "extension_pages": "script-src 'self'; object-src 'self';"
+  },
+  "offline_enabled": true
+}
+
+
+
+
+
+
+

@@ -1,0 +1,141 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <style>
+    body {
+        font-family: Inter, system-ui, Arial, sans-serif;
+        background: #0b1220;
+        color: #e6eef8;
+        margin: 0;
+        padding: 12px;
+        width: 700px;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .header {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        flex-wrap: wrap;
+        margin-bottom: 20px;
+        justify-content: center;
+    }
+
+    .header .title {
+        background: #a33636;
+        color: #fff;
+        padding: 8px 12px;
+        border-radius: 8px;
+        font-weight: 700;
+    }
+
+    label {
+        align-self: flex-start;
+        margin-top: 10px;
+        margin-bottom: 4px;
+    }
+
+    input, textarea {
+        width: 100%;
+        max-width: 680px;
+        padding: 10px;
+        border-radius: 6px;
+        border: 1px solid #a33636;
+        background: #071025;
+        color: #e6eef8;
+        box-sizing: border-box;
+        resize: vertical;
+        margin-top: 4px;
+    }
+
+    button {
+        background: #a33636;
+        border: none;
+        color: white;
+        padding: 8px 14px;
+        border-radius: 8px;
+        cursor: pointer;
+        font-weight: 600;
+        margin-top: 15px;
+        white-space: nowrap;
+        transition: 0.2s;
+    }
+
+    button:hover {
+        opacity: 0.9;
+    }
+
+    .btn-group {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+
+    #status {
+        margin-top: 12px;
+        color: #e6eef8;
+        font-size: 13px;
+        text-align: center;
+        word-break: break-all;
+    }
+	#status a {
+    color: #ff4c4c; /* rouge vif */
+    text-decoration: underline;
+    }
+	
+    #status a:hover {
+    opacity: 0.8;
+    }
+
+    .checkbox-container {
+        align-self: flex-start;
+        margin-top: 10px;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        font-size: 14px;
+        cursor: pointer;
+    }
+
+    .checkbox-container input[type="checkbox"] {
+        width: 16px;
+        height: 16px;
+        cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <div class="title">BrouF_LTaTM v1.2</div>
+  </div>
+
+  <label for="keyInput">Clé (4 chiffres)</label>
+  <input id="keyInput" type="number" value="2025" min="1000" max="9999">
+
+  <label for="imgUrl">URL de l'image</label>
+  <input id="imgUrl" type="text" placeholder="https://.../image.jpg">
+
+  <label for="filename">Nom du fichier .txt</label>
+  <input id="filename" type="text" value="texte.txt" placeholder="texte.txt">
+
+  <label for="txtInput">Texte à crypter</label>
+  <textarea id="txtInput" rows="6" placeholder="Texte à cacher"></textarea>
+
+  <label class="checkbox-container">
+    <input type="checkbox" id="uploadCheckbox">
+    Upload auto de l'image
+  </label>
+
+  <div class="btn-group">
+    <button id="encodeBtn">Crypter et télécharger</button>
+  </div>
+
+  <div id="status"></div>
+
+  <script src="popup.js"></script>
+</body>
+</html>

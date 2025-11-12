@@ -1,8 +1,30 @@
-# Basic Chrome extension .gitignore
-.DS_Store
-Thumbs.db
-.vscode/
-.idea/
+# Node dependencies
+node_modules/
+
+# Dossiers de build / distribution
+dist/
+build/
+*.zip
+
+# Logs
 *.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Fichiers temporaires
 *.tmp
 *.bak
+
+# OS-generated files
+.DS_Store
+Thumbs.db
+
+# IDE / éditeur
+.vscode/
+.idea/
+
+# Environment files
+.env
+.env.local
+

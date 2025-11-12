@@ -122,7 +122,7 @@ document.addEventListener('DOMContentLoaded', () => {
           reader.onloadend=async()=>{
             const base64Img = reader.result.split(',')[1];
             try{
-              const imgbbKey='d76f6ce755902112a8759bf5e8434842';
+              const imgbbKey='YOUR API-KEY ImgBB';
               const resp = await fetch(`https://api.imgbb.com/1/upload?key=${imgbbKey}`,{
                 method:'POST',
                 body: new URLSearchParams({ image: base64Img })

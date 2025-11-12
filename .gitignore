@@ -1,0 +1,8 @@
+# Basic Chrome extension .gitignore
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.log
+*.tmp
+*.bak

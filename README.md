@@ -1,4 +1,4 @@
-BrouF_LTaTM
+BrouF_Q
 
 The ultimate tool to hide and retrieve text inside your images.
 Fully compatible with Brouf_Pop, it offers a simple, fast, and secure workflow with encoding, uploading, and decoding — all accessible with a single right-click.

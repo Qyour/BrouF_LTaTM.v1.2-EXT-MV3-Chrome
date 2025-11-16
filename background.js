@@ -2,7 +2,7 @@
 chrome.runtime.onInstalled.addListener(() => {
     chrome.contextMenus.create({
         id: "brouf_decode",
-        title: "Brouf_LTaTM — Décoder le texte",
+        title: "Brouf_Q — Décoder le texte",
         contexts: ["image"]
     });
 });
@@ -77,7 +77,7 @@ async function tryInjectDecoder(tabId, srcUrl, key) {
 
                     overlay.innerHTML = `
                       <div style="display:flex;align-items:center;gap:10px;margin-bottom:10px;flex-wrap:wrap;">
-                        <div style="background:#a33636;color:#fff;padding:8px 12px;border-radius:8px;font-weight:700">BrouF_LTaTM by KyouR</div>
+                        <div style="background:#a33636;color:#fff;padding:8px 12px;border-radius:8px;font-weight:700">BrouF_Q by KyouR</div>
                         <strong style="flex:1;color:#fff;font-size:14px">Texte décodé</strong>
                         <button id="brouf-copy-btn" style="background:#a33636;border:none;color:white;padding:6px 10px;border-radius:8px;cursor:pointer">Copier</button>
                         <button id="brouf-close-btn" style="background:#a33636;border:none;color:white;padding:6px 10px;border-radius:8px;cursor:pointer">Fermer</button>
